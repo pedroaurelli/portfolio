@@ -51,10 +51,11 @@ h2{
     color: white;
     padding: 7px 35px ;
     border-radius: 10px;
+    font-weight: 600;
 }
 
 .listaMenu a:hover{
-    background-color: var(--azulEscuro);
+    color: var(--azulEscuro);
     transition: 0.3s;
     border-radius: 10px;
 }
@@ -97,7 +98,9 @@ h2{
 /*SECTION 2 - PARTE SOBRE*/
 
 .parteDois-sobre{
-    background-color: var(--azulClaro);
+    background-image: url(../img/wave\ bg\ 2.svg);
+    background-position: center;
+    background-size: cover;
     width: 100%;
     min-height: 100vh;
     max-height: 100%;
@@ -112,13 +115,43 @@ h2{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 150px 0px;
     
 }
 
 .containerTextoParteDois{
     width: 500px;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
+}
+
+
+.botaoBaixarCv a{
+    background-color: var(--azulEscuro);
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.botaoBaixarCv a:hover{
+    background-color: blue;
+    color: var(--azulClaro);
+    transition: 0.5s;
+}
+
+.botaoBaixarCv p{
+    margin: 0;
+}
+
+.listaSoftSkills li{
+    list-style-type: disc;
+    font-size: 25px;
 }
 
 .containerBarras{
