@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&family=Roboto&display=swap');
+
+:root{
+    --azulClaro: #5790FF;
+    --azulEscuro: #0057FF;
+    --preto: #181818;
+    --fonte: font-family: 'Roboto', sans-serif;
+}
