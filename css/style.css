@@ -93,6 +93,7 @@ h2{
 }
 
 .divImagemArrow{
+    padding-bottom: 50px;
     margin: 0 auto;
 }
 
@@ -134,7 +135,7 @@ h2{
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 330px;
     height: 50px;
     border-radius: 10px;
     transition: 0.5s;
@@ -149,9 +150,6 @@ h2{
     transition: 0.5s;
 }
 
-.botaoBaixarCv p{
-    margin: 0;
-}
 
 .listaSoftSkills li{
     list-style-type: disc;
@@ -286,7 +284,6 @@ h2{
     }
 
     .containerTextoParteDois{
-        width: 350px;
         font-size: 40px;
     }
 
@@ -318,11 +315,13 @@ h2{
         font-size: 35px;
     }
 
-    .botaoBaixarCv a{
+    .botaoPadrao a{
         height: 60px;
         width: 400px;
         font-size: 35px;
     }
+
+    
 
 }
 
