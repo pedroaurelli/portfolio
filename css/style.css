@@ -127,7 +127,7 @@ h2{
 }
 
 
-.botaoBaixarCv a{
+.botaoPadrao a{
     background-color: var(--azulEscuro);
     color: white;
     display: flex;
@@ -139,11 +139,13 @@ h2{
     border-radius: 10px;
     transition: 0.5s;
     font-size: 25px;
+    border: 3px solid transparent;
 }
 
-.botaoBaixarCv a:hover{
-    background-color: blue;
-    color: var(--azulClaro);
+.botaoPadrao a:hover{
+    border: 3px solid var(--azulEscuro);
+    background-color: transparent;
+    color: var(--azulEscuro);
     transition: 0.5s;
 }
 
@@ -156,44 +158,32 @@ h2{
     font-size: 25px;
 }
 
-.containerBarras{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-}
-
-.containerBarras h3{
-    color: white;
-    font-weight: bold;
-    font-size: 36px;
-}
-
-
-.barraDeProgresso{
+.containerIcones{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+    column-gap: 35px;
+    row-gap: 20px;
 }
 
-.barraDeProgresso img{
-    width: 70px;
-    height: 70px;
+.boxCardImg{
+    border-radius: 15px;
+    width: 117px;
+    height: 145px;
+    background-color: var(--azulClaro);
+    box-shadow: 8px 8px 20px #3479FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.progress{
-    width: 400px;
-    height: 30px;
-    background-color: #272727;
-    border-radius: 10px;
+.containerIcones img{
+    width: 100px;
 }
 
-.progress-bar{
-    background-color: #0055ffb7;
-    border-radius: 0px 10px 10px 0px;
-}
 
 #botaoMenu{
     background-color: transparent;
@@ -235,7 +225,7 @@ h2{
     }
 }
 
-@media (max-width:990px){
+@media(max-width:990px){
 
     header.active .listaMenu{
         transform: translateX(0);
@@ -323,9 +313,6 @@ h2{
         display: block;
     }
 
-    .progress{
-        width: 300px;
-    }
 
     .listaSoftSkills li{
         font-size: 35px;
