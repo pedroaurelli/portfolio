@@ -251,6 +251,41 @@ h2{
     width: 50px;
 }
 
+.parteQuatro-MaisProjetos{
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+    background-color: #3479FF;
+    
+}
+
+.maisProjetos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.maisProjetos h4{
+    font-weight: normal;
+}
+
+.maisProjetos h3{
+    color: white;
+}
+
+.parteCinco-Contato{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/wave\ bg\ 3.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 
