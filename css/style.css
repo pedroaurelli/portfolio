@@ -32,20 +32,21 @@ h2{
 }
 
 .menuHeader{
-    top: 30px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     position: fixed;
     width: 100%;
     z-index: 9999;
+    padding-top: 20px;
+    background-color: #181818ec;
+    
 }
 
 .listaMenu{
     display: flex;
     flex-direction: row;
     gap: 150px;
-    
 }
 
 .listaMenu a{
@@ -255,7 +256,7 @@ h2{
     width: 100%;
     height: auto;
     padding: 50px 0px;
-    background-color: #3479FF;
+    background-color: var(--azulClaro);
     
 }
 
@@ -365,6 +366,7 @@ h2{
 
     .menuHeader{
         top: 0;
+        background-color: transparent;
     }
 
     
