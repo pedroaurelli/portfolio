@@ -10,17 +10,17 @@
 
 footer{
     width: 100%;
-    height: 250px;
+    height: 150px;
     background-color: var(--preto);
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     text-align: left;
     color: white;
     padding: 50px;
 }
 
-footer > h3{
+footer  h3{
     font-size: 18px;
 }
 
@@ -102,10 +102,10 @@ h2{
     width: 383px;
     height: 383px;
     border-radius: 50%;
-    border: 5px solid var(--azulEscuro);
     background-position: center;
     background-size: cover;
-    background-image: url("../img/fotoTeste.jpeg");
+    background-image: url(../img/fotoTeste.jpeg);
+    
 }
 
 .divImagemArrow{
@@ -271,16 +271,16 @@ h2{
     width: 100%;
     height: auto;
     padding: 50px 0px;
-    background-color: var(--azulClaro);
+    background-color: var(--preto);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .maisProjetos{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
+
     text-align: center;
     color: white;
 }
