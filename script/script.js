@@ -38,6 +38,7 @@ function initAnimacaoScroll(){
     const conteudo = document.querySelectorAll('.js-section')
     const metadeTela = window.innerHeight * 0.7; 
 
+
     function animarScroll(){
         conteudo.forEach((item) =>{
             const sectionTop = item.getBoundingClientRect().top;
