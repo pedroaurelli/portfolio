@@ -39,6 +39,7 @@ h2{
     color: white;
 }
 
+
 .menuHeader button{
     display: none;
 }
@@ -111,6 +112,7 @@ h2{
 .divImagemArrow{
     padding-bottom: 50px;
     margin: 0 auto;
+    animation: animacaoSeta 0.6s forwards;
 }
 
 /*SECTION 2 - PARTE SOBRE*/
@@ -513,3 +515,31 @@ h2{
 }
 
 
+
+.divInfoInicio{
+    animation: animacaoInicio 2s forwards;
+}
+
+@keyframes animacaoInicio{
+    from{
+        opacity: 1 ;
+        transform: translate3d(0,30px,0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+@keyframes animacaoSeta{
+    from{
+        opacity: 0;
+        transform: translate3d(0,-30px,0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
