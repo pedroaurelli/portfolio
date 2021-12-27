@@ -56,8 +56,9 @@ h2{
     width: 100%;
     z-index: 9999;
     padding-top: 20px;
-    background-color: #141414;
+    background-color: var(--preto);
 }
+
 
 .listaMenu{
     display: flex;
@@ -100,27 +101,26 @@ h2{
 
 
 .divImg{
-    width: 383px;
-    height: 383px;
-    border-radius: 50%;
+    width: 483px;
+    height: 483px;
     background-position: center;
-    background-size: cover;
-    background-image: url(../img/foto.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/testeIsometric.svg);
+    animation: animacaoImagem 1s forwards;
     
 }
 
 .divImagemArrow{
     padding-bottom: 50px;
     margin: 0 auto;
-    animation: animacaoSeta 0.6s forwards;
+    animation: animacaoSeta 1s forwards;
 }
 
 /*SECTION 2 - PARTE SOBRE*/
 
 .parteDois-sobre{
-    background-image: url(../img/wave\ bg\ 2.svg);
-    background-position: center;
-    background-size: cover;
+    background-color: #2C2943;
     width: 100%;
     min-height: 100vh;
     max-height: 100%;
@@ -189,8 +189,7 @@ h2{
     border-radius: 15px;
     width: 117px;
     height: 145px;
-    background-color: var(--azulClaro);
-    box-shadow: 8px 8px 20px #3479FF;
+    background-color: #504D68;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,7 +272,7 @@ h2{
     width: 100%;
     height: auto;
     padding: 50px 0px;
-    background-color: var(--preto);
+    background-color: #2C2943;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,6 +290,12 @@ h2{
     font-weight: normal;
 }
 
+.maisProjetos h4 a{
+    color: var(--azulEscuro);
+    text-decoration: underline;
+    font-weight: normal;
+}
+
 .maisProjetos h3{
     color: white;
 }
@@ -298,10 +303,7 @@ h2{
 .parteCinco-Contato{
     width: 100%;
     height: 100vh;
-    background-image: url(../img/wave\ bg\ 3.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #2C2943;
 }
 
 .paginaContato{
@@ -356,7 +358,7 @@ h2{
 
 
 
-@media (max-width:1390px){
+@media (max-width:1420px){
     h1{
         font-size: 50px;
     }
@@ -376,6 +378,24 @@ h2{
 }
 
 @media (max-width:1200px){
+
+    .containerImgTitulo{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  
+    }
+
+    .botaoPadrao{
+        text-align: center;
+    }
+
+    .containerImgTitulo .divImg{
+        width: 360px;
+        height: 360px;
+    }
+
     .img {
         width: 100%;
     }
@@ -475,11 +495,7 @@ h2{
         font-size: 38px;
         text-align: center;
     }
-    .containerImgTitulo{
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+    
 
     .menuHeader button{
         display: block;
@@ -536,6 +552,18 @@ h2{
     from{
         opacity: 0;
         transform: translate3d(0,-30px,0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+@keyframes animacaoImagem{
+    from{
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
     }
 
     to{
