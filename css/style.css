@@ -34,6 +34,7 @@ footer{
     text-align: left;
     color: white;
     padding: 50px;
+    box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.281);
 }
 
 footer  h3{
@@ -73,6 +74,7 @@ h2{
     z-index: 9999;
     padding-top: 20px;
     background-color: var(--preto);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.281);
 }
 
 
@@ -86,13 +88,13 @@ h2{
     color: white;
     padding: 7px 35px ;
     font-weight: 600;
+    transition: 0.2s ease-in-out
 }
 
 
 
 .listaMenu  a:hover{
     color: var(--azulEscuro);
-    transition: 0.2s ease-in;
 }
 
 .parteUm-Home{
@@ -124,7 +126,7 @@ h2{
     background-repeat: no-repeat;
     background-image: url(../img/testeIsometric.svg);
     animation: animacaoImagem 1s forwards;
-    
+
 }
 
 .divImagemArrow{
@@ -152,7 +154,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     padding: 150px 0px;
-    
+
 }
 
 .containerTextoParteDois{
@@ -209,6 +211,13 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.4s ease-in-out;
+}
+
+.boxCardImg:hover{
+    transform: translateY(-10px);
+    background-color: #28263b;
+    box-shadow: 0px 9px 5px #211f33;
 }
 
 .containerIcones img{
@@ -248,7 +257,7 @@ h2{
 .img{
     width: 50%;
     height: auto;
-    
+
 }
 
 
@@ -293,7 +302,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .maisProjetos{
@@ -400,7 +409,7 @@ h2{
         text-align: center;
         justify-content: center;
         align-items: center;
-        flex-direction: column;  
+        flex-direction: column;
     }
 
     .botaoPadrao{
@@ -430,7 +439,7 @@ h2{
     .conteudoProjeto p{
         font-size: 33px;
     }
-    
+
 }
 
 @media(max-width:990px){
@@ -441,14 +450,11 @@ h2{
         align-items: center;
         flex-direction: column;
         z-index: 999;
-        transition: 0.3s ease-in;
+        transition: 0.3s ease-in-out;
         opacity: 100%;
-        
-        
-        
     }
 
-    
+
 
     header.active #botaoMenu{
         background-image: url(../img/botaoClose.svg);
@@ -465,9 +471,10 @@ h2{
     .menuHeader{
         top: 0;
         background-color: transparent;
+        box-shadow: none;
     }
 
-    
+
     .listaMenu{
         top: 0;
         text-align: right;
@@ -477,9 +484,9 @@ h2{
         background-color: var(--preto);
         top: 0;
         height: 100vh;
-        z-index: 20;  
-        opacity: 70%;  
-        
+        z-index: 20;
+        opacity: 70%;
+
     }
 
 
@@ -511,7 +518,7 @@ h2{
         font-size: 38px;
         text-align: center;
     }
-    
+
 
     .menuHeader button{
         display: block;
@@ -528,7 +535,7 @@ h2{
         font-size: 35px;
     }
 
-    
+
 
 }
 

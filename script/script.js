@@ -8,7 +8,7 @@ function menuMobile(){
 
 
         function toggleMenu(){
-            header.classList.toggle('active'); 
+            header.classList.toggle('active');
         }
 
         btnMenu.addEventListener('click', toggleMenu);
@@ -28,25 +28,21 @@ function menuMobile(){
 }
 
 
-
-
-
-
 initAnimacaoScroll();
 
 function initAnimacaoScroll(){
     const conteudo = document.querySelectorAll('.js-section')
-    const metadeTela = window.innerHeight * 0.7; 
+    const metadeTela = window.innerHeight * 0.7;
 
 
     function animarScroll(){
         conteudo.forEach((item) =>{
             const sectionTop = item.getBoundingClientRect().top;
-            const metadeVh = (metadeTela - sectionTop) 
+            const metadeVh = (metadeTela - sectionTop)
             if (metadeVh > 0){
                 item.classList.add('animarScroll')
             }
-            
+
         })
     }
 
